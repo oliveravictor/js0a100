@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        9.	[DeTodo]C
+        Crear un script que permita al usuario ingresar un número y muestre la tabla de multiplicar y la suma de los mismos. (Ejemplo: El usuario ingresa el numero 4)
+        4x1 = 4
+        4x2 = 8
+        ….
+
+        4+8+12+16 = 40 */ 
+
+      -----------
+     
+    -->
+
+ <script>
+
+        const num = parseInt(prompt("ingresar numero entero")); 
+        let total = []; // acumulo los resultados de las multiplicaciones
+
+        let sum = 0; 
+        let resultado = 0;
+        for (let i = 1; i <= 10; i++) {
+        document.write(`${num} x ${i} = ${resultado} <br>`); // el n del prompt por el for n veces. 
+        resultado = num * i;  
+        total.push(resultado); // el resultado lo pusheo al array vacio
+        sum = sum + resultado; // en suma 
+
+        }
+        document.write(`${total.join(" + ")} = ${sum} <br>`);
+      
+
+
+
+
+    </script>
+</body>
+</html>

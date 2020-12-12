@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+
+<!--
+    Se ingresan por teclado 4 números, si todos los valores ingresados son menores a 23, imprimir en la página ‘Todos los números son menores al número establecido. */
+
+    let valor1 = parseInt(prompt("Ingrese el primer valor"));
+let valor2 = parseInt(prompt("Ingrese el segundo valor"));
+let valor3 = parseInt(prompt("Ingrese el tercer valor"));
+let valor4 = parseInt(prompt("Ingrese el cuarto valor"));
+
+
+
+
+-->
+
+<script>
+       
+  for(let i =0; i<4; i++){
+    const valor = parseInt(prompt(`Ingresa el ${i+1} valor`));
+    let valores = 23;
+ 
+    valor < valores
+    ? document.write(`El valor ${valor} es MENOR a ${valores}, <br>`)
+    : document.write(`El valor ${valor} es MAYOR a ${valores}, <br>`);
+   }
+</script>
+
+
+</body>
+</html>

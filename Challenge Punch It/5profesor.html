@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="5profesor.js"></script>
+</head>
+<body>
+
+<!--
+    Confeccionar un programa que permita al usuario ingresar 2 notas y calcular:
+a.	Suma total
+b.	Promedio
+c.	Nota máxima
+*/
+
+-->
+
+    <script>
+        let nota1 = parseInt(prompt("¿Qué nota te sacaste en el primer examen?"));
+        let nota2 = parseInt(prompt("¿Y en el segundo examen qué te sacaste?"));
+        let sumaTotal = nota1 + nota2;
+        let promedio = sumaTotal / 2;
+
+if(nota1 > nota2
+  ? document.write(`La suma total de tus notas es: ${sumaTotal}. <br> El promedio de tus notas es: ${promedio}. <br> Tu nota máxima es la primera: ${nota1}`)
+  : document.write(`La suma total de tus notas es: ${sumaTotal}. <br> El promedio de tus notas es: ${promedio}. <br> Tu nota máxima es la segunda: ${nota2}`)   
+  );
+
+    </script>
+    
+</body>
+</html>
